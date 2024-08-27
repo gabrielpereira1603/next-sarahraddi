@@ -3,7 +3,7 @@
 .about{
     font-family: "Sora", sans-serif;
 
-    background-image: url(https://nikolasferreira.com.br/wp-content/uploads/2023/03/nikolas2.jpg);
+    background-image: url(https://somosdevteam.com/image/sarahraddi/site4.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -76,7 +76,7 @@
 @media (max-width: 800px) {
     .about{
         height: 100%;
-        background-image: url(https://nikolasferreira.com.br/wp-content/uploads/2023/03/nik2.jpg);
+        background-image: url(https://somosdevteam.com/image/sarahraddi/site3.png);
         background-position: bottom;
         padding: 30px 10px 770px 10px;
     }
@@ -99,7 +99,7 @@
 @media (max-width: 460px) {
     .about{
         height: 100%;
-        background-image: url(https://nikolasferreira.com.br/wp-content/uploads/2023/03/nik2.jpg);
+        background-image: url(https://somosdevteam.com/image/sarahraddi/site3.png);
         background-position: bottom;
         padding: 30px 10px 470px 10px;
     }
@@ -108,7 +108,7 @@
 @media (max-width: 390px) {
     .about{
         height: 100%;
-        background-image: url(https://nikolasferreira.com.br/wp-content/uploads/2023/03/nik2.jpg);
+        background-image: url(https://somosdevteam.com/image/sarahraddi/site3.png);
         background-position: bottom;
         padding: 30px 10px 570px 10px;
     }

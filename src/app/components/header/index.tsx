@@ -75,7 +75,7 @@ export default function Header() {
           <a href="/commitments" className="text-sm font-semibold leading-6 text-white hover:text-gray-300">
             Compromissos
           </a>
-          <a href="/visits" className="text-sm font-semibold leading-6 text-white hover:text-gray-300">
+          <a href="/" className="text-sm font-semibold leading-6 text-white hover:text-gray-300">
             Visitas
           </a>
         </PopoverGroup>
@@ -138,7 +138,7 @@ export default function Header() {
                   Compromissos
                 </a>
                 <a
-                  href="/visits"
+                  href="/"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Visitas

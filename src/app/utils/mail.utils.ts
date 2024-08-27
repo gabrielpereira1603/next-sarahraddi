@@ -14,7 +14,7 @@ const transport = nodemailer.createTransport({
 
 type SendEmaiDto = {
     sender: Mail.Address,
-    recipients: Mail.Address[],  // Corrigido para 'recipients'
+    recipients: Mail.Address[],  
     subject: string;
     message: string;
 }

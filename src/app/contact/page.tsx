@@ -1,8 +1,40 @@
 "use client";
 
 import style from "@/app/contact/contact.module.css";
+import { useState } from "react";
 
 export default function Contact() {
+    const [result, setResult] = useState<Record<string, string>>({});
+    const [loading, setLoading] = useState<boolean>(false);
+    const [form, setForm] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setForm((prev) => ({ ...prev, [name]: value }));
+    };
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setLoading(true);
+
+        fetch('/api/emails', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(form),
+        })
+        .then(response => response.json())
+        .then(data => setResult(data))
+        .catch(error => setResult({ error: error.message }))
+        .finally(() => setLoading(false));
+    };
+
     return (
         <section className="bg-white pt-8">
             <div className="max-w-7xl mx-auto px-4 md:flex md:space-x-8">
@@ -13,18 +45,18 @@ export default function Contact() {
                         <h3 className="text-xl text-gray-600">Quer enviar uma mensagem para a Sarah? Preencha o formulário!</h3>
                     </div>
                     
-                    <form className="space-y-4">
+                    <form className="space-y-4" onSubmit={handleSubmit}>
                         <div className="flex space-x-4">
                             <div className="flex-1">
                                 <input 
                                     type="text" 
                                     name="name" 
                                     placeholder="Seu nome" 
+                                    value={form.name}
+                                    onChange={handleChange}
                                     required 
                                     className="w-full p-3 border border-gray-300 placeholder-gray-500 rounded-md focus:outline-none"
-                                    style={{
-                                        outlineColor: "#7f015f",
-                                    }} 
+                                    style={{ outlineColor: "#7f015f" }} 
                                 />
                             </div>
                             <div className="flex-1">
@@ -32,11 +64,11 @@ export default function Contact() {
                                     type="email" 
                                     name="email" 
                                     placeholder="Seu email" 
+                                    value={form.email}
+                                    onChange={handleChange}
                                     required 
                                     className="w-full p-3 border border-gray-300 placeholder-gray-500 rounded-md focus:outline-none"
-                                    style={{
-                                        outlineColor: "#7f015f",
-                                    }} 
+                                    style={{ outlineColor: "#7f015f" }} 
                                 />
                             </div>
                         </div>
@@ -46,11 +78,11 @@ export default function Contact() {
                                 type="tel" 
                                 name="phone" 
                                 placeholder="Seu telefone com DDD" 
+                                value={form.phone}
+                                onChange={handleChange}
                                 required 
                                 className="w-full p-3 border border-gray-300 placeholder-gray-500 rounded-md focus:outline-none"
-                                style={{
-                                    outlineColor: "#7f015f",
-                                }} 
+                                style={{ outlineColor: "#7f015f" }} 
                             />
                         </div>
 
@@ -58,11 +90,11 @@ export default function Contact() {
                             <textarea 
                                 name="message" 
                                 placeholder="Escreva sua mensagem" 
+                                value={form.message}
+                                onChange={handleChange}
                                 required 
                                 className="w-full p-3 border border-gray-300 placeholder-gray-500 rounded-md focus:outline-none"
-                                style={{
-                                    outlineColor: "#7f015f",
-                                }}         
+                                style={{ outlineColor: "#7f015f" }}         
                             ></textarea>
                         </div>
 
@@ -71,17 +103,16 @@ export default function Contact() {
                             style={{ backgroundColor: "#7f015f" }} 
                             className="w-full py-3 text-white font-bold rounded-md hover:opacity-90 transition-opacity"
                         >
-                            Enviar
+                            {loading ? "Enviando..." : "Enviar"}
                         </button>
                     </form>
                 </div>
 
-                {/* Imagem */}
                 <div className="md:w-1/2 flex justify-center items-center mt-8 md:mt-0">
                     <img 
                         src="https://somosdevteam.com/image/sarahraddi/site6.png" 
                         alt="Imagem de contato" 
-                        className="w-full h-auto max-w-md" // Limita o tamanho da imagem
+                        className="w-full h-auto max-w-md" 
                     />
                 </div>
             </div>

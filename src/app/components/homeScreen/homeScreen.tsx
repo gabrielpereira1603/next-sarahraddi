@@ -6,8 +6,12 @@ import Image from "next/image";
 
 export default function HomeScreen() {
     const scrollToNextSection = () => {
-        document.getElementById("nextSection").scrollIntoView({ behavior: "smooth" });
+        const element = document.getElementById("nextSection");
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
     };
+
 
     return (
         <section className={style.homeScreen}>

@@ -38,7 +38,6 @@ export default function Contact() {
     return (
         <section className="bg-white pt-8">
             <div className="max-w-7xl mx-auto px-4 md:flex md:space-x-8">
-                {/* Formulário */}
                 <div className="md:w-1/2">
                     <div className="text-center mb-6">
                         <h2 className="text-3xl font-bold">Entre em contato!</h2>

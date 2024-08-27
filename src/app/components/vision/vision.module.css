@@ -1,0 +1,25 @@
+.vision {
+    width: 100%;
+    font-family: "Sora", sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+.content {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+@media (max-width: 460px) {
+    .content {
+        width: 90%;
+    }
+}

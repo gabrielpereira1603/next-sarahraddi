@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.mission{
+    width: 100%;
+    font-family: "Sora", sans-serif;
+    padding-bottom: 50px;
+}
+
+.title{
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0px;
+
+    padding-bottom: 40px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.missionItens {
+    width: 400px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: var(--background-main);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao transformar */
+}
+
+.missionItens:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho no hover */
+}
+
+.missionItens h2{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,54 @@
+.socialMedia {
+    display: flex;
+    gap: 30px;
+    font-family: "Sora", sans-serif;
+}
+
+.socialMediaContainer {
+    width: 100%;
+    background:#7f015fa0;
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.titleSocialMedia {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 6px;
+}
+
+.titleSocialMedia h5{
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.titleSocialMedia p{
+    color: #fff;
+    font-weight: 200;
+    color: #fff;
+}
+
+
+.socialMedia a {
+    display: inline-block;
+    border-radius: 50%; 
+    overflow: hidden;
+    background-color: transparent; 
+    padding: 10px; 
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .socialMedia a:hover {
+    background-color: #000000; 
+    transform: scale(1.1);
+  }

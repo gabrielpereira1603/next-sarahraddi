@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 .homeScreen {
     width: 100%;
@@ -24,7 +25,7 @@
     flex-direction: column;
     z-index: 1; 
     width: 50%;
-    margin-right: 8vw;
+    margin-right: 18vw;
 }
 
 .imageContainer {
@@ -100,7 +101,7 @@
         width: 100%;
         height: 50vh;
         background-image: url(https://nikolasferreira.com.br/wp-content/uploads/2023/03/siuhd.jpg);
-        background-position: calc(left + 100%) bottom; /* Ajuste a posição horizontal com uma porcentagem */
+        background-position: bottom center; /* Ajuste a posição horizontal com uma porcentagem */
         background-repeat: no-repeat;
         background-size: cover;
     }

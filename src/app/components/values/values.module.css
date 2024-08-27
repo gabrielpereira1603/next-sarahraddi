@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.values{
+    margin-top: 60px;
+    width: 100%;
+    font-family: "Sora", sans-serif;
+    padding-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.title{
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0px;
+
+}
+
+.cards {
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    background: var(--background-main);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 300px;
+    text-align: center;
+    align-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+}
+
+.card img{
+    width: 60px;
+    height: 60px;
+}
+
+.card h2 {
+    font-family: oswald, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    text-align: start;
+    color: rgb(255, 255, 255);
+}

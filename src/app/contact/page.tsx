@@ -57,7 +57,6 @@ export default function Contact() {
                         <div>
                             <textarea 
                                 name="message" 
-                                rows="4" 
                                 placeholder="Escreva sua mensagem" 
                                 required 
                                 className="w-full p-3 border border-gray-300 placeholder-gray-500 rounded-md focus:outline-none"

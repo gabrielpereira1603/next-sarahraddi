@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.commitments{
+    background-color: white;
+
+    width: 100%;
+    font-family: "Sora", sans-serif;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0px;
+
+    padding-bottom: 40px;
+}
+
+.content{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.commitmentsItens {
+    width: 400px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: var(--background-main);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao transformar */
+}
+
+.commitmentsItens:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho no hover */
+}
+
+.commitmentsItens h2{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0px;
+}

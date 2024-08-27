@@ -59,7 +59,7 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white" // Removi a classe `text-gray-700` para manter a cor do texto original
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white" 
           >
             <span className="sr-only">Abrir Menu</span>
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
@@ -72,10 +72,10 @@ export default function Header() {
           <a href="/purpose" className="text-sm font-semibold leading-6 text-white hover:text-gray-300">
             Missão, Visão e Valores
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white hover:text-gray-300">
+          <a href="/commitments" className="text-sm font-semibold leading-6 text-white hover:text-gray-300">
             Compromissos
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white hover:text-gray-300">
+          <a href="/visits" className="text-sm font-semibold leading-6 text-white hover:text-gray-300">
             Visitas
           </a>
         </PopoverGroup>
@@ -119,31 +119,26 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                    Sobre
-                  </DisclosureButton>
-                </Disclosure>
                 <a
-                  href="#"
+                  href="/"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Sobre
+                </a>
+                <a
+                  href="/purpose"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Missão, Visão e Valores
                 </a>
                 <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
+                  href="/commitments"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Compromissos
                 </a>
                 <a
-                  href="#"
+                  href="/visits"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Visitas

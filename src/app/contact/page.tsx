@@ -2,6 +2,7 @@
 
 import style from "@/app/contact/contact.module.css";
 import { useState } from "react";
+import Swal from 'sweetalert2';
 
 export default function Contact() {
     const [result, setResult] = useState<Record<string, string>>({});
@@ -21,7 +22,7 @@ export default function Contact() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setLoading(true);
-
+    
         fetch('/api/emails', {
             method: 'POST',
             headers: {
@@ -30,10 +31,36 @@ export default function Contact() {
             body: JSON.stringify(form),
         })
         .then(response => response.json())
-        .then(data => setResult(data))
-        .catch(error => setResult({ error: error.message }))
+        .then(data => {
+            setResult(data);
+            if (data.accepted) {
+                Swal.fire({
+                    title: 'Sucesso!',
+                    text: 'Sua mensagem foi enviada com sucesso.',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                });
+            } else {
+                Swal.fire({
+                    title: 'Erro!',
+                    text: 'Houve um problema ao enviar sua mensagem.',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                });
+            }
+        })
+        .catch(error => {
+            setResult({ error: error.message });
+            Swal.fire({
+                title: 'Erro!',
+                text: `Houve um problema ao enviar sua mensagem: ${error.message}`,
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+        })
         .finally(() => setLoading(false));
     };
+    
 
     return (
         <section className="bg-white pt-8">

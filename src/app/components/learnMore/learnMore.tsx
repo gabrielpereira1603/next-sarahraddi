@@ -31,27 +31,27 @@ export default function LearnMore() {
                 >
                     <SwiperSlide>
                         <div className={style.slideContent}>
-                            <img src="https://nikolasferreira.com.br/wp-content/uploads/2023/03/ms-1.jpg" alt=""/>
+                            <img src="https://placehold.co/400" alt=""/>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={style.slideContent}>
-                            <img src="https://nikolasferreira.com.br/wp-content/uploads/2023/03/emens.jpg" alt=""/>
+                            <img src="https://placehold.co/400" alt=""/>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={style.slideContent}>
-                            <img src="https://nikolasferreira.com.br/wp-content/uploads/2023/03/entrevista.jpg" alt=""/>
+                            <img src="https://placehold.co/400" alt=""/>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={style.slideContent}>
-                            <img src="https://nikolasferreira.com.br/wp-content/uploads/2023/03/discurso.jpg" alt=""/>
+                            <img src="https://placehold.co/400" alt=""/>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={style.slideContent}>
-                            <img src="https://nikolasferreira.com.br/wp-content/uploads/2023/03/entrevista.jpg" alt=""/>
+                            <img src="https://placehold.co/400" alt=""/>
                         </div>
                     </SwiperSlide>
                 </Swiper>

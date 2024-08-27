@@ -15,42 +15,42 @@ export default function Visits() {
                 <div className={style.contentItens}>
                     <h2>Clique na imageme veja mais informações</h2>
                     <a href="#">
-                        <img src="https://nikolasferreira.com.br/wp-content/uploads/2024/06/ART-1.png" alt="" />
+                        <img src="https://placehold.co/400" alt="" />
                     </a>
                 </div>
 
                 <div className={style.contentItens}>
                     <h2>Clique na imageme veja mais informações</h2>
                     <a href="#">
-                        <img src="https://nikolasferreira.com.br/wp-content/uploads/2024/06/ART-1.png" alt="" />
+                        <img src="https://placehold.co/400" alt="" />
                     </a>
                 </div>
 
                 <div className={style.contentItens}>
                     <h2>Clique na imageme veja mais informações</h2>
                     <a href="#">
-                        <img src="https://nikolasferreira.com.br/wp-content/uploads/2024/06/ART-1.png" alt="" />
+                        <img src="https://placehold.co/400" alt="" />
                     </a>
                 </div>
 
                 <div className={style.contentItens}>
                     <h2>Clique na imageme veja mais informações</h2>
                     <a href="#">
-                        <img src="https://nikolasferreira.com.br/wp-content/uploads/2024/06/ART-1.png" alt="" />
+                        <img src="https://placehold.co/400" alt="" />
                     </a>
                 </div>
 
                 <div className={style.contentItens}>
                     <h2>Clique na imageme veja mais informações</h2>
                     <a href="#">
-                        <img src="https://nikolasferreira.com.br/wp-content/uploads/2024/06/ART-1.png" alt="" />
+                        <img src="https://placehold.co/400" alt="" />
                     </a>
                 </div>
 
                 <div className={style.contentItens}>
                     <h2>Clique na imageme veja mais informações</h2>
                     <a href="#">
-                        <img src="https://nikolasferreira.com.br/wp-content/uploads/2024/06/ART-1.png" alt="" />
+                        <img src="https://placehold.co/400" alt="" />
                     </a>
                 </div>
             </div>

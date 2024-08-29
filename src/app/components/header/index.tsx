@@ -95,7 +95,8 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Sarah Raddi</span>
-              <h1 
+              <a
+                href='/'
                 className="text-black" 
                 style={{
                   fontFamily: '"Sora", Sans-serif',
@@ -105,7 +106,7 @@ export default function Header() {
                 }}
               >
                 Sarah Raddi
-              </h1>
+              </a>
             </a>
             <button
               type="button"

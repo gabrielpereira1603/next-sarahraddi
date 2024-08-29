@@ -13,27 +13,27 @@ export default function Commitments() {
 
             <div className={style.content}>
                 <div className={style.commitmentsItens}>
-                    <h2>Compromisso 1</h2>
+                    <h2>Educação e o Futuro das Crianças</h2>
                 </div>
 
                 <div className={style.commitmentsItens}>
-                    <h2>Compromisso 2</h2>
+                    <h2>Empreendedorismo e Desenvolvimento Econômico</h2>
                 </div>
 
                 <div className={style.commitmentsItens}>
-                    <h2>Compromisso 3</h2>
+                    <h2>Respeito às Tradições Familiares</h2>
                 </div>
 
                 <div className={style.commitmentsItens}>
-                    <h2>Compromisso 4</h2>
+                    <h2>Saúde e Bem-Estar da Comunidade</h2>
                 </div>
 
                 <div className={style.commitmentsItens}>
-                    <h2>Compromisso 5</h2>
+                    <h2>Integridade e a Transparência no Mandato</h2>
                 </div>
 
                 <div className={style.commitmentsItens}>
-                    <h2>Compromisso 6</h2>
+                    <h2>Desenvolvimento Social e a Igualdade</h2>
                 </div>
             </div>
         </section>

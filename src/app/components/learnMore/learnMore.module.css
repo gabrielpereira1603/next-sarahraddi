@@ -56,3 +56,6 @@
         width: 90%;
     }
 }
+.slideContent img {
+    filter: grayscale(100%);
+}

@@ -11,27 +11,27 @@ export default function Mission() {
             </div>
             <div className={style.content}>
                 <div className={style.missionItens}>
-                    <h2>Missão 1</h2>
+                    <h2>Promover o Desenvolvimento Econômico Sustentável</h2>
                 </div>
 
                 <div className={style.missionItens}>
-                    <h2>Missão 2</h2>
+                    <h2>Garantir uma Educação de Qualidade para Todos</h2>
                 </div>
 
                 <div className={style.missionItens}>
-                    <h2>Missão 3</h2>
+                    <h2>Fortalecer a Saúde Pública e o Bem-Estar Social</h2>
                 </div>
 
                 <div className={style.missionItens}>
-                    <h2>Missão 4</h2>
+                    <h2>Defender os Valores Familiares e Comunitários</h2>
                 </div>
 
                 <div className={style.missionItens}>
-                    <h2>Missão 5</h2>
+                    <h2>Atuar com Transparência e Responsabilidade</h2>
                 </div>
 
                 <div className={style.missionItens}>
-                    <h2>Missão 6</h2>
+                    <h2>Reduzir as Desigualdades e Promover a Justiça Social</h2>
                 </div>
             </div>
         </section>

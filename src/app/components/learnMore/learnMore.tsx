@@ -6,6 +6,10 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Img1 from './images/img1.jpeg';
+import Img2 from './images/img2.jpeg';
+import Img3 from './images/img3.jpeg';
+import Image from 'next/image';
 import style from "@/app/components/learnMore/learnMore.module.css";
 
 export default function LearnMore() {
@@ -31,17 +35,17 @@ export default function LearnMore() {
                 >
                     <SwiperSlide>
                         <div className={style.slideContent}>
-                            <img src="https://placehold.co/400" alt=""/>
+                            <Image src={Img1} alt=""/>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={style.slideContent}>
-                            <img src="https://placehold.co/400" alt=""/>
+                            <Image src={Img2} alt=""/>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={style.slideContent}>
-                            <img src="https://placehold.co/400" alt=""/>
+                            <Image src={Img3} alt=""/>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>

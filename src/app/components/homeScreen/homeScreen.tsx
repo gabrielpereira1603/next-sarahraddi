@@ -2,6 +2,7 @@
 
 import style from "@/app/components/homeScreen/homeScreen.module.css";
 import BackgroundPhoto from "./images/sarah_raddi_photo_notback.png";
+import Logo from "./images/logo-roxa.png";
 import Image from "next/image";
 
 export default function HomeScreen() {
@@ -17,7 +18,8 @@ export default function HomeScreen() {
         <section className={style.homeScreen}>
             <div className={style.content}>
                 <h2 className={style.title}>Candidata a Vereadora</h2>
-                <h2 className={style.name}>Sarah Raddi</h2>
+                {/* <h2 className={style.name}>Sarah Raddi</h2> */}
+                <Image src={Logo} alt="" width={250}/>
                 <p>
                     Seja bem-vindo(a) ao site da Sarah Raddi! Aqui você terá acesso a todas as informações sobre a candidata a vereadora, podendo se atualizar sobre todo o seu mandato!
                 </p>

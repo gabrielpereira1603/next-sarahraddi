@@ -75,15 +75,18 @@ export default function Header() {
           <a href="/commitments" className="text-sm font-semibold leading-6 text-white hover:text-gray-300">
             Compromissos
           </a>
+          <a href="/curriculum" className="text-sm font-semibold leading-6 text-white hover:text-gray-300">
+            Currículo
+          </a>
           <a href="/visits" className="text-sm font-semibold leading-6 text-white hover:text-gray-300">
             Visitas
           </a>
         </PopoverGroup>
       </nav>
-      <Dialog 
-        open={mobileMenuOpen} 
-        onClose={setMobileMenuOpen} 
-        className="lg:hidden"
+      <Dialog
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+          className="lg:hidden"
       >
         <div className="fixed inset-0 z-10 bg-black bg-opacity-50" /> {/* Overlay escuro ao abrir o menu */}
         <DialogPanel 
@@ -121,26 +124,32 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <a
-                  href="/"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    href="/"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Sobre
                 </a>
                 <a
-                  href="/purpose"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    href="/purpose"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Missão, Visão e Valores
                 </a>
                 <a
-                  href="/commitments"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    href="/commitments"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Compromissos
                 </a>
                 <a
-                  href="/visits"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    href="/curriculum"
+                    className="text-sm font-semibold leading-6 text-white hover:text-gray-300"
+                >
+                  Currículo
+                </a>
+                <a
+                    href="/visits"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Visitas
                 </a>
